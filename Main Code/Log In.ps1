@@ -1,5 +1,5 @@
 # Abrir el ficherin
-$file = Get-Content "cuentas.txt"
+$email, $password = Get-Content "cuentas.txt" -Split ":"
 
 # Bucle para probar las cuentas
 for ($i = 0; $i -lt $cuentas.Count; $i++) {
